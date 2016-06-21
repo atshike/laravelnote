@@ -9,7 +9,7 @@ use App\Http\Requests;
 
 class CategoryController extends Controller
 {
-    //
+    //分类
     public function index(){
         $categorys=Category::all();
         $data = $this->getTree($categorys,'name','id','pid');
